@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 3 homework, SHAPES</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Week 3 SHAPES Homework</h1>
+        <Canvas id="canvas" width="800" height="800" style="border: 1px solid black;">
+        </Canvas>
+        <script>
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+
+            //square
+            ctx.fillStyle = "yellow";
+            ctx.fillRect(166, 361, 90, 90);
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = "5";
+            ctx.strokeRect(166, 361, 90, 90);
+
+            //line
+            ctx.strokeStyle = "#ff0000";
+            ctx.beginPath();
+            ctx.moveTo(77, 615)
+            ctx.lineTo(251, 494)
+            ctx.stroke();
+
+            //circle
+            ctx.fillStyle = "#ffff00"
+            ctx.strokeStyle = "red"
+            ctx.beginPath();
+            ctx.arc(347,397,100,0, 2*Math.Pi,false);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+
+            //Hexagon
+            ctx.strokeStyle = "#ff00ff"
+            ctx.fillStyle = "#00ffff"
+            ctx.beginPath();
+            ctx.moveTo(501, 278)
+            ctx.lineTo(600, 255)
+            ctx.lineTo(652, 341)
+            ctx.lineTo(585, 417)
+            ctx.lineTo(493, 377)
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+
+            //star
+            ctx.strokeStyle = "#202020"
+            ctx.fillStyle = "#ffff00"
+            ctx.beginPath();
+            ctx.moveTo(572, 447);
+            ctx.lineTo(601, 498);
+            ctx.lineTo(660, 510);
+            ctx.lineTo(620, 553);
+            ctx.lineTo(626, 613);
+            ctx.lineTo(572, 588);
+            ctx.lineTo(517, 613);
+            ctx.lineTo(524, 554);
+            ctx.lineTo(483, 510);
+            ctx.lineTo(543, 499);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+        </script>
+    </body>
+</html>
